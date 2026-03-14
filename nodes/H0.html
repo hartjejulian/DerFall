@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<title>Der Fall nebenan – H0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preload" as="image" href="../Bilder/H0_bg_small.jpg" media="(max-width: 599px)"/>
+<link rel="preload" as="image" href="../Bilder/H0_bg_med.jpg" media="(min-width: 600px)"/>
+<link rel="preload" as="image" href="../Bilder/H0_bg_large.jpg" media="(min-width: 900px)"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<style>
+  body { background-image: url("../Bilder/H0_bg_small.jpg"); }
+  @media (min-width: 600px){ body{ background-image: url("../Bilder/H0_bg_med.jpg"); } }
+  @media (min-width: 900px){ body{ background-image: url("../Bilder/H0_bg_large.jpg"); } }
+</style>
+<script defer src="../js/ui.js"></script>
+</head>
+<body class="responsive">
+<div id="bg_dim"></div>
+<div id="container">
+  <div id="header"><h2>H0</h2></div>
+  <div id="content">
+    <h1>Zu Hause, später Abend</h1>
+    <p>Der Regen prasselt gegen die Scheiben, und du sitzt noch in Dienstkleidung im Wohnzimmer, als würdest du gleich wieder aufstehen müssen. Dein Handy liegt auf dem Tisch wie ein stiller Befehl, und dein Blick wandert immer wieder dahin, obwohl du eigentlich abschalten willst. Dann vibriert es: „Kommissar“ leuchtet auf, und für einen Sekundenbruchteil fühlt sich der Raum enger an. Du spürst ein Unbehagen, das du nicht erklären kannst – als wäre dieser Anruf nicht nur Arbeit, sondern ein Schnitt in deinen Abend. <br><br>Du entscheidest, ob du sofort drangehst oder den Moment noch hinauszögerst.</p>
+  </div>
+  <div id="choices">
+    <div id="choices_title">Entscheidungen:</div>
+    <div id="choices_grid">
+<a class="choice" href="H1.html">
+  <div class="choice_row">
+    <div class="choice_badge">Option A</div>
+    <div class="choice_label">Anruf sofort annehmen</div>
+  </div>
+</a>
+<a class="choice" href="H1.html">
+  <div class="choice_row">
+    <div class="choice_badge">Option B</div>
+    <div class="choice_label">Anruf erst ignorieren (du nimmst später trotzdem ab)</div>
+  </div>
+</a>
+    </div>
+  </div>
+</div>
+<div id="footer"><a href="../Index.html">Home</a></div>
+</body>
+</html>

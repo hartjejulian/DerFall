@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <title>Der Fall nebenan – Map</title>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <link rel="preload" as="image" href="../Bilder/map.jpg"/>
+  <style>
+    body{ background-image: url("../Bilder/map.jpg"); }
+  </style>
+  <script defer src="../js/ui.js"></script>
+</head>
+<body>
+  <div id="bg_dim"></div>
+  <div id="container">
+    <div id="header"><h2>Der Fall nebenan</h2></div>
+
+    <div id="content">
+      <h1>Map</h1>
+      <p>Die Map ist deine Übersicht über alle Knotenpunkte der Geschichte. Du kannst hier direkt zu jeder Seite springen, um Wege und Enden zu testen oder wieder einzusteigen.</p>
+    </div>
+
+    <div id="choices">
+      <div id="choices_title">Knotenpunkte:</div>
+      <div id="choices_grid">
+<a class="choice" href="../nodes/P0.html">
+  <div class="choice_row">
+    <div class="choice_badge">P0</div>
+    <div class="choice_label">Ganz neu starten</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/H0.html">
+  <div class="choice_row">
+    <div class="choice_badge">H0</div>
+    <div class="choice_label">Los geht’s – Dienst antreten</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/H1.html">
+  <div class="choice_row">
+    <div class="choice_badge">H1</div>
+    <div class="choice_label">Anruf sofort annehmen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/H3.html">
+  <div class="choice_row">
+    <div class="choice_badge">H3</div>
+    <div class="choice_label">Sofort losfahren</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T0.html">
+  <div class="choice_row">
+    <div class="choice_badge">T0</div>
+    <div class="choice_label">Zum Tatort-Briefing</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T1.html">
+  <div class="choice_row">
+    <div class="choice_badge">T1</div>
+    <div class="choice_label">Wohnzimmer untersuchen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T1a.html">
+  <div class="choice_row">
+    <div class="choice_badge">T1a</div>
+    <div class="choice_label">Hülsen korrekt sichern (Fotos + Beweismittel)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T01.html">
+  <div class="choice_row">
+    <div class="choice_badge">T01</div>
+    <div class="choice_label">Zurück zum Flur</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T1b.html">
+  <div class="choice_row">
+    <div class="choice_badge">T1b</div>
+    <div class="choice_label">Hülsen einstecken (Risiko)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/G1.html">
+  <div class="choice_row">
+    <div class="choice_badge">G1</div>
+    <div class="choice_label">Jemand sieht es (Regelverstoß)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T1d.html">
+  <div class="choice_row">
+    <div class="choice_badge">T1d</div>
+    <div class="choice_label">Weiter im Wohnzimmer suchen (Kerben/Abrieb)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T2.html">
+  <div class="choice_row">
+    <div class="choice_badge">T2</div>
+    <div class="choice_label">Mit Angehörigen sprechen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T2a.html">
+  <div class="choice_row">
+    <div class="choice_badge">T2a</div>
+    <div class="choice_label">Behutsam fragen (Vertrauen)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T02.html">
+  <div class="choice_row">
+    <div class="choice_badge">T02</div>
+    <div class="choice_label">Zurück zum Flur (weiter ermitteln)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T2b.html">
+  <div class="choice_row">
+    <div class="choice_badge">T2b</div>
+    <div class="choice_label">Hart nachfragen (Druck)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/T2c.html">
+  <div class="choice_row">
+    <div class="choice_badge">T2c</div>
+    <div class="choice_label">Gespräch beenden (zu viel gerade)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/E0.html">
+  <div class="choice_row">
+    <div class="choice_badge">E0</div>
+    <div class="choice_label">Ermittlungsrunde beenden</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/N0.html">
+  <div class="choice_row">
+    <div class="choice_badge">N0</div>
+    <div class="choice_label">Nach Hause fahren</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/N1.html">
+  <div class="choice_row">
+    <div class="choice_badge">N1</div>
+    <div class="choice_label">Schlafen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/N4.html">
+  <div class="choice_row">
+    <div class="choice_badge">N4</div>
+    <div class="choice_label">Am Morgen die Nachricht lesen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/W1.html">
+  <div class="choice_row">
+    <div class="choice_badge">W1</div>
+    <div class="choice_label">Zur Wache gehen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/L0.html">
+  <div class="choice_row">
+    <div class="choice_badge">L0</div>
+    <div class="choice_label">Ins Labor – Ergebnisse abwarten</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/S2.html">
+  <div class="choice_row">
+    <div class="choice_badge">S2</div>
+    <div class="choice_label">Einen anderen Nachbarn belasten</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/F0.html">
+  <div class="choice_row">
+    <div class="choice_badge">F0</div>
+    <div class="choice_label">Anonymen Hinweis absetzen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/F0a.html">
+  <div class="choice_row">
+    <div class="choice_badge">F0a</div>
+    <div class="choice_label">Hinweis mit einem Detail würdiger machen (Ort/Zeit)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/F2.html">
+  <div class="choice_row">
+    <div class="choice_badge">F2</div>
+    <div class="choice_label">Abwarten: Verdacht verlagert sich</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/F3.html">
+  <div class="choice_row">
+    <div class="choice_badge">F3</div>
+    <div class="choice_label">Ein paar Tage später…</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/L1.html">
+  <div class="choice_row">
+    <div class="choice_badge">L1</div>
+    <div class="choice_label">Den Lottoschein genauer ansehen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/L2.html">
+  <div class="choice_row">
+    <div class="choice_badge">L2</div>
+    <div class="choice_label">Liegen lassen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/L3.html">
+  <div class="choice_row">
+    <div class="choice_badge">L3</div>
+    <div class="choice_label">Mitnehmen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/L4.html">
+  <div class="choice_row">
+    <div class="choice_badge">L4</div>
+    <div class="choice_label">Neuanfang</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/E4.html">
+  <div class="choice_row">
+    <div class="choice_badge">E4</div>
+    <div class="choice_label">Untertauchen und neu anfangen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/F0b.html">
+  <div class="choice_row">
+    <div class="choice_badge">F0b</div>
+    <div class="choice_label">Noch länger erzählen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/G6.html">
+  <div class="choice_row">
+    <div class="choice_badge">G6</div>
+    <div class="choice_label">Jemand merkt, dass etwas nicht stimmt</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/F0c.html">
+  <div class="choice_row">
+    <div class="choice_badge">F0c</div>
+    <div class="choice_label">Hinweis nochmal wiederholen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/F1.html">
+  <div class="choice_row">
+    <div class="choice_badge">F1</div>
+    <div class="choice_label">Beweis platzieren</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/F1a.html">
+  <div class="choice_row">
+    <div class="choice_badge">F1a</div>
+    <div class="choice_label">Hülse in den Garten werfen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/F1b.html">
+  <div class="choice_row">
+    <div class="choice_badge">F1b</div>
+    <div class="choice_label">Etwas in die Mülltonne legen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/S3F.html">
+  <div class="choice_row">
+    <div class="choice_badge">S3F</div>
+    <div class="choice_label">Weglaufen (Flucht-Route)</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/G7.html">
+  <div class="choice_row">
+    <div class="choice_badge">G7</div>
+    <div class="choice_label">In sein Haus einbrechen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/S3.html">
+  <div class="choice_row">
+    <div class="choice_badge">S3</div>
+    <div class="choice_label">Fliehen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/S4.html">
+  <div class="choice_row">
+    <div class="choice_badge">S4</div>
+    <div class="choice_label">Geständnis</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/E1.html">
+  <div class="choice_row">
+    <div class="choice_badge">E1</div>
+    <div class="choice_label">Urteil</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/W2.html">
+  <div class="choice_row">
+    <div class="choice_badge">W2</div>
+    <div class="choice_label">Krankmelden</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/G3.html">
+  <div class="choice_row">
+    <div class="choice_badge">G3</div>
+    <div class="choice_label">Tür nicht öffnen</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/N2.html">
+  <div class="choice_row">
+    <div class="choice_badge">N2</div>
+    <div class="choice_label">Notizen ordnen & Ablauf rekonstruieren</div>
+  </div>
+</a>
+<a class="choice" href="../nodes/N3.html">
+  <div class="choice_row">
+    <div class="choice_badge">N3</div>
+    <div class="choice_label">Waffenschrank kurz checken (nur zur Beruhigung)</div>
+  </div>
+</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"><a href="../Index.html">Home</a></div>
+</body>
+</html>
